@@ -41,7 +41,7 @@ function App() {
           O CREA não é apenas um conselho, é uma comunidade!
         </h2>
       </div>
-      <div className="flex flex-col w-full bg-crea-blue">
+      <div className="flex flex-col w-screen bg-crea-blue">
         <div className="flex flex-col py-5 w-full gap-5">
           <div className="flex flex-col gap-5 w-full items-center justify-center px-4 sm:px-14">
             <h2 className="text-center text-4xl sm:text-6xl font-bold">Qual seu perfil?</h2>
@@ -109,8 +109,55 @@ function App() {
               *Dados fictícios
             </p>
 
-            <div className="mx-4 sm:mx-10">
-              <Carousel className="w-full">
+            <div className="flex flex-col w-full items-center justify-center">
+              <h2 className="text-center text-4xl sm:text-5xl font-bold mb-16">
+                Empresas 3 estrelas do CREA
+              </h2>
+              <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-5">
+                <div className="flex flex-col w-full items-center justify-center border-solid border-4 border-black rounded-xl p-4 sm:p-6">
+                  <h2 className="text-center text-xl sm:text-2xl font-bold">
+                  Estrutura Prime Engenharia
+                  </h2>
+                  <div className="flex flex-col w-full items-center justify-center ">
+                    <h2 className="text-center text-5xl sm:text-6xl font-bold my-5">
+                      87%
+                    </h2>
+                    <h2 className="text-center text-2xl sm:text-3xl font-bold">
+                      dos associados acima de 4 estrelas
+                    </h2>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full items-center justify-center border-solid border-4 border-black rounded-xl p-4 sm:p-6">
+                <h2 className="text-center text-xl sm:text-2xl font-bold">
+                Fundação e Forma Construtora
+                  </h2>
+                  <div className="flex flex-col w-full items-center justify-center ">
+                    <h2 className="text-center text-5xl sm:text-6xl font-bold my-5">
+                      98%
+                    </h2>
+                    <h2 className="text-center text-2xl sm:text-3xl font-bold">
+                      dos associados acima de 4 estrelas
+                    </h2>
+                  </div>
+                </div>
+                <div className="flex flex-col w-full items-center justify-center border-solid border-4 border-black rounded-xl p-4 sm:p-6">
+                  <h2 className="text-center text-2xl sm:text-3xl font-bold">
+                    Artemis Infra e Projetos
+                  </h2>
+                  <div className="flex flex-col w-full items-center justify-center ">
+                    <h2 className="text-center text-5xl sm:text-6xl font-bold my-5">
+                      92%
+                    </h2>
+                    <h2 className="text-center text-2xl sm:text-3xl font-bold">
+                      dos associados acima de 4 estrelas
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-4 w-full sm:mx-10">
+              <Carousel className="">
                 <CarouselContent>
                   <CarouselItem className="flex flex-col gap-5 w-full items-center justify-center text-left p-4 sm:p-6">
                     <div className="flex flex-col sm:flex-row gap-5 w-full items-center justify-center text-left">
@@ -168,8 +215,8 @@ function App() {
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="hidden sm:block" />
+                <CarouselNext className="hidden sm:block" />
               </Carousel>
             </div>
           </div>
