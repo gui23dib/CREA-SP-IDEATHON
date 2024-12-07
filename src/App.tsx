@@ -7,6 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 function App() {
   const enterpriseProfileRef = useRef<HTMLDivElement>(null)
   const professionalProfileRef = useRef<HTMLDivElement>(null)
+  const contactFooterRef = useRef<HTMLDivElement>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const images = ["./heroimg.jpg", "./heroimg2.jpg", "./heroimg3.jpg", "./heroimg4.jpg"]
 
@@ -55,8 +56,10 @@ function App() {
               className="flex flex-col gap-5 w-full items-center justify-center p-8 sm:p-14 hover:cursor-pointer"
               onClick={() => enterpriseProfileRef.current?.scrollIntoView({ behavior: "smooth" })}
             >
-              <Building className="w-24 h-24 sm:w-32 sm:h-32" />
-              <h3 className="text-center text-3xl sm:text-4xl font-bold">Instituição</h3>
+              <div className="flex flex-col gap-5 w-full items-center justify-center bg-crea-yellow rounded-xl p-4 sm:p-6 hover:bg-crea-yellow/80">
+                <Building className="w-24 h-24 sm:w-32 sm:h-32" />
+                <h3 className="text-center text-3xl sm:text-4xl font-bold">Instituição</h3>
+              </div>
             </div>
             <Separator orientation="horizontal" className="bg-black h-1 sm:hidden" />
             <Separator orientation="vertical" className="bg-black w-1 hidden sm:block" />
@@ -64,8 +67,10 @@ function App() {
               className="flex flex-col gap-5 w-full items-center justify-center p-8 sm:p-14"
               onClick={() => professionalProfileRef.current?.scrollIntoView({ behavior: "smooth" })}
             >
-              <User className="w-24 h-24 sm:w-32 sm:h-32" />
-              <h3 className="text-center text-3xl sm:text-4xl font-bold">Profissional</h3>
+              <div className="flex flex-col gap-5 w-full items-center justify-center bg-crea-yellow rounded-xl p-4 sm:p-6 hover:bg-crea-yellow/80">
+                <User className="w-24 h-24 sm:w-32 sm:h-32" />
+                <h3 className="text-center text-3xl sm:text-4xl font-bold">Profissional</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -105,11 +110,9 @@ function App() {
                 </p>
               </div>
             </div>
-            <p className="w-full text-left">
-              *Dados fictícios
-            </p>
 
-            <div className="flex flex-col w-full items-center justify-center">
+
+            <div className="flex p-10 flex-col w-screen items-center justify-center bg-yellow-500">
               <h2 className="text-center text-4xl sm:text-5xl font-bold mb-16">
                 Empresas 3 estrelas do CREA
               </h2>
@@ -123,7 +126,7 @@ function App() {
                       87%
                     </h2>
                     <h2 className="text-center text-2xl sm:text-3xl font-bold">
-                      dos associados acima de 4 estrelas
+                      dos associados acima de 4 estrelas*
                     </h2>
                   </div>
                 </div>
@@ -136,7 +139,7 @@ function App() {
                       98%
                     </h2>
                     <h2 className="text-center text-2xl sm:text-3xl font-bold">
-                      dos associados acima de 4 estrelas
+                      dos associados acima de 4 estrelas*
                     </h2>
                   </div>
                 </div>
@@ -149,12 +152,16 @@ function App() {
                       92%
                     </h2>
                     <h2 className="text-center text-2xl sm:text-3xl font-bold">
-                      dos associados acima de 4 estrelas
+                      dos associados acima de 4 estrelas*
                     </h2>
                   </div>
                 </div>
               </div>
+              <p className="w-full text-left">
+                *Dados fictícios
+              </p>
             </div>
+
 
             <div className="mx-4 w-full sm:mx-10">
               <Carousel className="">
@@ -238,7 +245,7 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full mt-10 gap-6">
+          <div className="flex flex-col mt-10 gap-6 bg-blue-900 w-screen p-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-left">
               O foco é em você! Seja visto entre os mais de
             </h2>
@@ -270,6 +277,52 @@ function App() {
               Seja ouvido! a união faz a força, se una aos mais de 370.000 profissionais registrados.
             </p>
           </div>
+        </div>
+        <div className="flex flex-col w-full bg-blue-950 text-white">
+        <div className="flex flex-row w-full" ref={contactFooterRef}>
+          <div className="flex flex-col w-full items-center justify-center p-12">
+            <h2 className="text-lg sm:text-xl font-bold text-left">
+              ATENDIMENTO SEDE
+            </h2>
+            <p className="text-center text-sm sm:text-md">
+              Somente via Agendamento
+
+              Segunda à sexta-feira
+
+              08h30 às 16h30
+            </p>
+          </div>
+          <div className="flex flex-col w-full items-center justify-center p-12">
+            <h2 className="text-lg sm:text-xl font-bold text-left">
+              ENDEREÇO SEDE
+            </h2>
+            <p className="text-center text-sm sm:text-md">
+              São Paulo-SP
+
+              Av. Brigadeiro Faria Lima, 1059, Pinheiros
+
+              CEP: 01452-920
+            </p>
+          </div>
+          <div className="flex flex-col w-full items-center justify-center p-12">
+            <h2 className="text-lg sm:text-xl font-bold text-left">
+            CONTATOS
+            </h2>
+            <p className="text-center text-sm sm:text-md">
+              Call-Center: 0800 017 18 11
+
+              Whatsapp: (11) 9 1000-8888
+
+              faleconosco@creasp.org.br
+
+              Segunda a Sexta: das 7h às 21h
+
+              Sábados: das 7h às 13h
+            </p>
+          </div>
+
+        </div>
+        <img src="LogosCreaConfeaMutua.svg" alt="logos" className="w-1/2 h-1/2 object-contain items-center justify-center mx-auto px-10 py-5" />
         </div>
       </div>
     </>
