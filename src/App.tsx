@@ -278,8 +278,8 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-full text-white bg-blue-950">
-        <div className="flex flex-row w-full sm:flex-col" ref={contactFooterRef}>
+        <div className="flex flex-col sm:flex-row w-full text-white bg-blue-950">
+        <div className="flex flex-row md:flex-row lg:flex-row w-full" ref={contactFooterRef}>
           <div className="flex flex-col items-center justify-center w-full p-12">
             <h2 className="text-lg font-bold text-left sm:text-xl">
               ATENDIMENTO SEDE
@@ -306,7 +306,7 @@ function App() {
           </div>
           <div className="flex flex-col items-center justify-center w-full p-12">
             <h2 className="text-lg font-bold text-left sm:text-xl">
-            CONTATOS
+              CONTATOS
             </h2>
             <p className="text-sm text-center sm:text-md">
               Call-Center: 0800 017 18 11
@@ -320,7 +320,6 @@ function App() {
               Sábados: das 7h às 13h
             </p>
           </div>
-
         </div>
         <img src="LogosCreaConfeaMutua.svg" alt="logos" className="items-center justify-center object-contain w-1/2 px-10 py-5 mx-auto h-1/2" />
         </div>
