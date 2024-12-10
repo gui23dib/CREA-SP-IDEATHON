@@ -279,7 +279,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row w-full text-white bg-blue-950">
-        <div className="flex flex-row md:flex-row lg:flex-row w-full" ref={contactFooterRef}>
+        <div className="flex flex-col md:flex-row lg:flex-row w-full" ref={contactFooterRef}>
           <div className="flex flex-col items-center justify-center w-full p-12">
             <h2 className="text-lg font-bold text-left sm:text-xl">
               ATENDIMENTO SEDE
