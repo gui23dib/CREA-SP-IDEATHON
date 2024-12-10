@@ -278,50 +278,50 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row w-full text-white bg-blue-950">
-        <div className="flex flex-col md:flex-row lg:flex-row w-full" ref={contactFooterRef}>
-          <div className="flex flex-col items-center justify-center w-full p-12">
-            <h2 className="text-lg font-bold text-left sm:text-xl">
-              ATENDIMENTO SEDE
-            </h2>
-            <p className="text-sm text-center sm:text-md">
-              Somente via Agendamento
+        <div className="flex flex-col w-full text-white bg-blue-950">
+          <div className="flex flex-col md:flex-row lg:flex-row w-full" ref={contactFooterRef}>
+            <div className="flex flex-col items-center justify-center w-full p-12">
+              <h2 className="text-lg font-bold text-left sm:text-xl">
+                ATENDIMENTO SEDE
+              </h2>
+              <p className="text-sm text-center sm:text-md">
+                Somente via Agendamento
 
-              Segunda à sexta-feira
+                Segunda à sexta-feira
 
-              08h30 às 16h30
-            </p>
+                08h30 às 16h30
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center w-full p-12">
+              <h2 className="text-lg font-bold text-left sm:text-xl">
+                ENDEREÇO SEDE
+              </h2>
+              <p className="text-sm text-center sm:text-md">
+                São Paulo-SP
+
+                Av. Brigadeiro Faria Lima, 1059, Pinheiros
+
+                CEP: 01452-920
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center w-full p-12">
+              <h2 className="text-lg font-bold text-left sm:text-xl">
+                CONTATOS
+              </h2>
+              <p className="text-sm text-center sm:text-md">
+                Call-Center: 0800 017 18 11
+
+                Whatsapp: (11) 9 1000-8888
+
+                faleconosco@creasp.org.br
+
+                Segunda a Sexta: das 7h às 21h
+
+                Sábados: das 7h às 13h
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full p-12">
-            <h2 className="text-lg font-bold text-left sm:text-xl">
-              ENDEREÇO SEDE
-            </h2>
-            <p className="text-sm text-center sm:text-md">
-              São Paulo-SP
-
-              Av. Brigadeiro Faria Lima, 1059, Pinheiros
-
-              CEP: 01452-920
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center w-full p-12">
-            <h2 className="text-lg font-bold text-left sm:text-xl">
-              CONTATOS
-            </h2>
-            <p className="text-sm text-center sm:text-md">
-              Call-Center: 0800 017 18 11
-
-              Whatsapp: (11) 9 1000-8888
-
-              faleconosco@creasp.org.br
-
-              Segunda a Sexta: das 7h às 21h
-
-              Sábados: das 7h às 13h
-            </p>
-          </div>
-        </div>
-        <img src="LogosCreaConfeaMutua.svg" alt="logos" className="items-center justify-center object-contain w-1/2 px-10 py-5 mx-auto h-1/2" />
+          <img src="LogosCreaConfeaMutua.svg" alt="logos" className="items-center justify-center object-contain w-1/2 px-10 py-5 mx-auto h-1/2" />
         </div>
       </div>
     </>
